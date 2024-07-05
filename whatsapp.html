@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root{
+                --dark:#202030;
+                --lightdark: #2c2c2c;
+                --active_inbox:#454545;
+                --hover_inbox: #383838;
+                --primary_textbox: #005c4b;
+                --secondary_textbox: #353535;
+                --icon_primarytext:#ffffff;
+                --subpara: #cfcfcf;
+                --light_green: #1daa61;
+            }
+            body{
+                font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            body, h1, h2, h3, p{
+                padding: 0px;
+                margin: 0px;
+                color: var(--icon_primarytext);
+            }
+            
+            .row{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+            }
+            .col{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            .rowrev{
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 5px;
+            }
+            .colrev{
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 5px;
+            }
+            .logo_container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                aspect-ratio: 1/1;
+                /* border: 2px solid red; */
+            }
+            .logo{
+                height: 80%;
+                aspect-ratio: 1/1;
+                /* border: 2px solid red; */
+            }
+            
+            .icon_container1{
+                display: flex;
+                height: 90%;
+                width: 35px;
+                /* border: 2px solid red; */
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+            }
+            .icon_container1:hover{
+                background-color: var(--hover_inbox);
+            }
+            .icon_container1:hover .icon path{
+                fill:var(--dark);
+            }
+            .icon{
+                /* display: flex; */
+                width: 40%;
+                /* fill: var(--icon_primarytext); */
+                /* border: 2px solid red; */
+            }
+            .icon path{
+                fill: white;
+            }
+            div[id="topbar"]{
+                box-sizing: border-box;
+                padding: 5px;
+                background-color: var(--dark);
+                height: 40px;
+                width: 100%;
+                justify-content:space-between ;
+            }
+            div[id="leftpart"], div[id="rightpart"]{
+                background-color:var(--dark) ;
+                width:auto;
+                font-size: 0.8em;
+                align-items: center;
+                /* border: 3px solid red; */
+            }
+        </style>
+    </head>
+    <body>
+        </script>
+        <div class="row" id="topbar">
+            <div class="row" id="leftpart">
+                <div class="logo_container">
+                    <svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 512 512" style=" enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:#30e14b;}
+                        </style>
+                        <g>
+                            <path class="st0" d="M370.6,308.5c1.4,2.4,1.4,13.8-3.3,27.1c-4.7,13.3-27.4,25.5-38.4,27.1c-18.1,2.7-32.2,1.3-68.4-14.3
+                                c-57.2-24.7-94.5-82.2-97.3-86S140,231.5,140,203.5s14.7-41.8,19.9-47.5c5.2-5.6,11.4-7.1,15.2-7.1s7.6,0,10.9,0.2
+                                c3.5,0.2,8.2-1.3,12.8,9.8c4.7,11.4,16.1,39.4,17.6,42.3c1.4,2.9,2.4,6.2,0.5,10c-10.9,21.8-22.6,21-16.7,31.1
+                                c22.1,37.9,44,51,77.5,67.8c5.6,2.9,9,2.4,12.3-1.4c3.4-3.9,14.3-16.6,18.1-22.4c3.8-5.8,7.6-4.8,12.8-2.9
+                                c5.2,1.8,33.3,15.6,38.9,18.5C365.5,304.5,369.3,305.9,370.6,308.5z"/>
+                            <path class="st0" d="M417.1,92.8C374.1,49.7,316.8,26,255.9,26C130.2,26,28,128.3,28,254c0,40.1,10.5,79.4,30.4,114L26,486
+                                l120.9-31.7c33.3,18.2,70.8,27.7,108.9,27.7h0.1C381.5,482,486,379.7,486,254.1C486,193.2,460.1,136,417.1,92.8z M255.9,443.6
+                                c-34.1,0-67.5-9.1-96.5-26.4l-6.9-4.1l-71.7,18.8L99.9,362l-4.5-7.2c-19-30.2-29-65-29-100.8c0-104.4,85-189.4,189.5-189.4
+                                c50.6,0,98.2,19.7,133.9,55.6c35.7,35.8,57.7,83.4,57.6,134C447.5,358.6,360.3,443.6,255.9,443.6z"/>
+                        </g>
+                    </svg>
+                </div>
+                <div id="whatsapp"><p>WhatsApp</p></div>
+            </div>
+            <div class="row" id="rightpart">
+                <div class="icon_container1">
+                    
+                        <svg class="icon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M480,480H32a32,32,0,0,1,0-64H480a32,32,0,0,1,0,64Z"/>
+                        </svg>
+                    
+                </div>
+                <div class="icon_container1">
+                    <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                        <path class="st0" d="M47.7,0H14.4c-1.3,0-2.3,1-2.3,2.3v33.3c0,1.3,1,2.3,2.3,2.3h33.3c1.3,0,2.3-1,2.3-2.3V2.3C50,1,49,0,47.7,0z
+                            M45.5,33.3H16.7V4.5h28.8V33.3z"/>
+                        <path class="st0" d="M37.9,39.4v8.3c0,1.3-1,2.3-2.3,2.3H2.3C1,50,0,49,0,47.7V14.4c0-1.3,1-2.3,2.3-2.3h8.3v4.5H4.5v28.8h28.8v-6.1
+                            H37.9z" />
+                        <path class="st0" d="M37.9,39.4v8.3c0,1.3-1,2.3-2.3,2.3H2.3C1,50,0,49,0,47.7V14.4c0-1.3,1-2.3,2.3-2.3h8.3v4.5H4.5v28.8h28.8v-6.1
+                            H37.9z"/>
+                    </svg>
+                </div>
+                <div class="icon_container1">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
